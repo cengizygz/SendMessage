@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".View.LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="HAMMAL"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/round_back_darkblue"
+        android:hint="Email"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="140dp"/>
+
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/round_back_darkblue"
+        android:hint="Şifre"
+
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/sifremiUnuttumBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifremi Unuttum ?"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:layout_gravity="end"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"/>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButon"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Giriş Yap"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_back_primary_15"
+        android:textColor="#fff"/>
+    <TextView
+        android:id="@+id/hesabinYokMuBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hesabınız Yok Mu ? Kayıt Ol"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:textSize="14sp"/>
+
+</LinearLayout>

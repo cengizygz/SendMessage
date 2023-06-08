@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ChatActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/primary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_btn"
+
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/arrow_back" />
+
+            <TextView
+                android:id="@+id/chat_username_textview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="90dp"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:text="asdasdasdasdasd"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chat_recy_view"
+        android:background="@drawable/chat_background"
+        android:layout_above="@id/card_view_chat_bottom"
+        android:layout_below="@id/card_view_chat"
+        android:padding="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_chat_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#dfe6e9"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="6"
+                android:background="#fff"
+                android:hint="Mesaj Gir"
+                android:inputType="text"
+                android:id="@+id/messageTextEditText"
+                android:minHeight="50dp"
+                android:paddingLeft="10dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="0dp"
+                android:id="@+id/sendMessageButton"
+                android:src="@drawable/icon__send2"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@color/primary"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                 />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

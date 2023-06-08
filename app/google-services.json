@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "443954752463",
+    "project_id": "hammal-af915",
+    "storage_bucket": "hammal-af915.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443954752463:android:05246fc405feb4d90540ba",
+        "android_client_info": {
+          "package_name": "com.cengizhanyagiz.hammalmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443954752463-rga7pmbke039dk6u8qv61ovfggv12lc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCixwULN7qmh4PDwJuGOGsu3261vtKQHVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443954752463-rga7pmbke039dk6u8qv61ovfggv12lc5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
